@@ -5,29 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@300;500;700;800&family=Open+Sans&family=Outfit:wght@400;700&family=Poppins:wght@400;600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
 <!--This is the header Section-->
 
-   <header>
-        <div>
+   <header class="header-section">
+        <div class="logo">
            <img src="images/logo.svg" alt="Flo logo">
         </div>
         <nav>
            <ul>
-                 <li><a>Features</a></li>
-                 <li><a>Team</a></li>
-                 <li><a>Sign In</a></li>
+                 <li><a href="#features">Features</a></li>
+                 <li><a href="#team">Team</a></li>
+                 <li><a href="#sign_in">Sign In</a></li>
             </ul>
         </nav>
 
@@ -37,19 +35,10 @@
 
   <main> 
 
-<!--This is the Hero section of the page-->
-    <section>
+<!--This is the First Hero section of the page-->
+    <section class="first-hero-section">
 
-      <aside>
-
-          <div>
-             <img src="images/illustration-1.svg" alt="this is an illustration">
-          </div>
-
-      </aside>
-
-     
-     <aside>  
+      <aside class="aside1">  
          <h1>All your files in one secure<br>location, accessible anywhere.
          </h1>
           <p>Fylo stores your most important files in     one secure   location. 
@@ -61,14 +50,80 @@
          <button type="submit">Get Started</button>
          </form>
      </aside>
+
+      <aside class="aside2">
+
+          <div>
+             <img src="images/illustration-1.svg" alt="this is an illustration">
+          </div>
+
+      </aside>
+
    
     </section>
 
  <!--This is the Second Hero Section-->   
 
-    <section>
+    <section class="second-hero-section">
 
-        <aside>
+
+
+      <aside class="aside3">
+         <h2>
+         Stay productive, wherever you are
+
+          </h2>
+
+         <p>
+
+           Never let location be an issue when accessing your files. Fylo has you<br> 
+           covered for all of your file storage needs.
+
+          </p>
+         <p>
+
+          Securely share files and folders with friends, family and colleagues for<br> 
+         live collaboration. No email attachments required!
+
+         </p>
+
+       <div class="link-arrow">
+
+           <div>
+             <a href="">See how Fylo works</a>
+           </div>
+
+          <div>
+            <img src="images/icon-arrow.svg" alt="arrow svg">
+           </div>
+       </div>
+
+   <!--This is a Card-->
+     <article class="card">
+
+       <div>
+         <img src="images/icon-quotes.svg" alt="quote svg">
+       </div>
+       <p>
+          Fylo has improved our team productivity by<br> an order of magnitude. Since 
+          making the<br> switch our team has become a well-oiled<br> collaboration machine.
+       </p>
+
+        <div>
+              <div>
+                  <img src="images/avatar-testimonial.jpg" alt="Ceo's Avatar">
+             </div>
+             <p>
+             Kyle Burton
+             Founder & CEO, Huddle
+             </p>
+         </div>
+
+       </article>
+
+    </aside>
+
+        <aside class="aside4">
 
             <div>
              <img src="images/illustration-2.svg" alt="this is an illustration">
@@ -78,87 +133,31 @@
 
           
 
-        <aside>
-            <h2>
-            Stay productive, wherever you are
-
-             </h2>
-
-            <p>
-
-              Never let location be an issue when accessing your files. Fylo has you<br> 
-              covered for all of your file storage needs.
-
-             </p>
-            <p>
-
-             Securely share files and folders with friends, family and colleagues for<br> 
-            live collaboration. No email attachments required!
-
-            </p>
-
-          <div>
-
-             <div>
-
-             <a href="">See how Fylo works</a>
-
-              </div>
-   
-             <div>
-               <img src="images/icon-arrow.svg" alt="arrow svg">
-              </div>
-          </div>
-
-      <!--This is a Card-->
-        <article>
-
-          <div>
-            <img src="images/icon-quotes.svg" alt="quote svg">
-          </div>
-          <p>
-             Fylo has improved our team productivity by an order of magnitude. Since 
-             making the switch our team has become a well-oiled collaboration machine.
-          </p>
-
-           <div>
-
-               <div>
-                     <img src="images/avatar-testimonial.jpg" alt="Ceo's Avatar">
- 
-                </div>
-              <p>
-                Kyle Burton
-                Founder & CEO, Huddle
-               </p>
-
-
-            </div>
-   
-          </article>
-
-      </aside>
-
+       
 
 
     </section>   
 
     <!--This is the call to action Section-->
-    <section>
+    <section class="cta-section">
 
        <div>
           <h2>Get early access today</h2>
 
-          <p>It only takes a minute to sign up and our free   starter tier is extremely generous. 
-          If you have any questions, our support team would be happy to help you.</p> 
+          <p>It only takes a minute to sign up and our free   starter tier is<br> extremely generous. 
+          If you have any questions, our support team<br> would be happy to help you.</p> 
 
        </div>
 
  
 
         <form action="/submit" method="post">
+
+           
             <input type="email" id="email" name="email" placeholder="Email address" required>
             <button type="submit">Get Started For Free</button>
+         
+
          </form>
  
     </section>
@@ -166,69 +165,58 @@
   </main>
    
  <!--This is the footer Section of the page-->
-  <footer>
+ <footer class="footer-container">
 
-
-    <div>
-
-      <div>
-          <img src="images/logo.svg" alt="Flo logo">
+   <div class="contact-footer">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="Flo logo">
       </div>
-
-      <div>
-         <div>
-             <img src="images/icon-phone.svg" alt="phone icon">
-         </div>
-
-          <p>
-            Phone: +1-543-123-4567
-          </p>
+      <div class="phone">
+        <div>
+          <img src="images/icon-phone.svg" alt="phone icon">
+        </div>
+        <p>
+          Phone: +1-543-123-4567
+        </p>
       </div>
-
-
-       <div>
-              <div>
-                <img src="images/icon-email.svg" alt="email icon">
-              <div>
-              <p>
-                 example@fylo.com
-              </p>
-       </div>
-
+      <div class="email">
+        <div>
+          <img src="images/icon-email.svg" alt="email icon">
+        </div>
+        <p>
+          example@fylo.com
+        </p>
+      </div>
     </div>
   
-
-    <div>
-       <ul>
-          <li><a>About us</a></li>
-          <li><a>Jobs</a></li>
-          <li><a>Press</a></li>
-          <li><a>Blog</a></li>
-       </ul>
+    <div class="links1">
+      <ul>
+        <li><a href="#About_us">About us</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#press">Press</a></li>
+        <li><a href="Blog">Blog</a></li>
+      </ul>
     </div>
 
-     <div>
-        <ul>
-          <li><a>Contact Us</a></li>
-          <li><a>Terms</a></li>
-          <li><a>Privacy</a></li>
-       </ul>
- </div>
+    <div class="links2">
+      <ul>
+        <li><a href="#contact_us">Contact Us</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ul>
+    </div>
 
-   <div>
-
-      <div>
-          <img src="images/logo-facebook.svg" alt="facebook logo" width="32" height="32">
+    <div class="socials">
+      <div class="socials-logo">
+        <img src="images/logo-facebook.svg" alt="facebook logo" width="32" height="32">
       </div>
-      <div>
-          <img src="images/logo-twitter.svg" alt="twitter logo" width="32" height="32">
+      <div class="socials-logo">
+        <img src="images/logo-twitter.svg" alt="twitter logo" width="32" height="32">
       </div>
-      <div>
-         <img src="images/logo-instagram.svg" alt="instagram logo" width="32" height="32">
+      <div class="socials-logo">
+        <img src="images/logo-instagram.svg" alt="instagram logo" width="32" height="32">
       </div>
-
-   </div>   
-   
+    </div>
 </footer>
 
 

@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 16px;
+
+ }
+ /* this is the header section */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header-section .logo {
+    padding-left: 40px;
+     flex-grow: 1;
+}
+
+.header-section .logo img {
+    height: 40px;
+}
+
+.header-section nav ul {
+    list-style: none;
+    display: flex; /* Display navigation links in a row */
+  }
+  
+    
+  .header-section nav ul li {
+    margin-left: 20px;
+  }  
+
+  .header-section nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .header-section nav ul li a:hover {
+    color: rgba(32, 80, 168, 0.877);
+  }
+
+  /* This is the first hero section of the page */
+
+  .first-hero-section {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 80px 20px;
+     background-color: #f6f8fb;
+  }
+
+.first-hero-section .aside2 {
+    flex-basis: 50%;
+}
+
+.first-hero-section .aside1 {
+    flex-basis: 50%;
+    padding-left: 40px;
+}
+
+
+ .first-hero-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.first-hero-section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.first-hero-section form {
+    display: flex;
+    align-items: center;
+}
+ 
+.first-hero-section input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.first-hero-section button[type="submit"] {
+    padding: 12px 20px;
+    background-color: hsl(239, 69%, 61%) ;
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+}
+.first-hero-section button[type="submit"]:hover {
+    background-color: #ff3333;
+  }
+
+  /* this is the second hero section */
+
+  .second-hero-section {
+       display: flex;
+       justify-content: space-between;
+       padding: 80px 20px;
+       background-image: url(images/bg-curve-desktop.svg);
+       background-size: cover;
+       background-position: center;
+
+  }
+
+  .second-hero-section .aside3 {
+    flex-basis: 50%; /* set the width of the first aside element*/
+    padding-left: 40px;
+
+  }
+
+  .second-hero-section .aside4 {
+    flex-basis: 50%; /*set width of second aside element */
+    padding-left: 40px; /* spacing between the columns*/
+  }
+
+  .second-hero-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+
+  }
+
+  .second-hero-section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 20px;
+
+  }
+
+  .second-hero-section .link-arrow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .second-hero-section .link-arrow::after {
+    content: ""; /* Create the line */
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: calc(45% - 20px); 
+    height: 2px;
+    background-color: #388649ec;
+  }
+  
+
+  .second-hero-section .link-arrow a {
+    text-decoration: none;
+    color: #388649ec;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  
+  .second-hero-section .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .second-hero-section .card img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .second-hero-section .card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .second-hero-section .card div {
+    display: flex;
+    align-items: center;
+  }
+
+  .second-hero-section .card div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .second-hero-section .card div p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #666;
+  }
+  
+/* this is the call to action section */
+
+
+
+.cta-section {
+     display: flex;
+     align-items: center;
+     background-color: hsl(238, 22%, 44%);
+     padding: 80px 20px;
+     justify-content: space-between;
+}
+.cta-section div {
+    padding-left: 40px;
+}
+
+.cta-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+.cta-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: text-top;
+
+}
+
+
+
+.cta-section input[type="email"] {
+    width: 250px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-section button {
+    padding: 10px 16px;
+    background-color: hsl(239, 69%, 61%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.938rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-section button:hover {
+    background-color: #ff3333;
+  }
+
+
+  /* this is the footer section */
+
+
+/* Style the footer container */
+
+.footer-container {
+    border: 1px solid black;
+    background-color:  hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.contact-footer {
+   padding-left: 40px;
+
+}
+
+.phone {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.email {
+    display: flex;
+    margin-top: 20px;
+} 
+
+.phone div,.email div {
+    margin-right: 10px;
+    
+}
+
+.contact-footer,
+.links1,
+.links2,
+.socials {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.links1 > ul,
+.links2 > ul,
+.socials > div {
+  margin-bottom: 8px;
+}
+
+.links1 ul,
+.links2 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links1 ul li a,
+.links2 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+
+}
+.socials div {
+    margin-right: 10px;
+}
+
+.footer-logo img {
+
+    filter: brightness(0) invert(1);
+}
+
+.socials-logo img {
+    filter: brightness(0) invert(1);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+
+    color: hsl(228, 45%, 44%);
+
+     }
